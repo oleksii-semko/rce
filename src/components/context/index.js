@@ -3,7 +3,7 @@ import React, { createContext, useState } from "react";
 const AppContext = createContext();
 const AppContextProvider = ({ children }) => {
   let [state, setState] = useState([]);
-  const setLandingPageConfig = (config) => {
+  const setAppState = (config) => {
     setState(prevState => ({
       ...prevState,
       config
@@ -11,7 +11,7 @@ const AppContextProvider = ({ children }) => {
   };
 
   return (
-    <AppContext.Provider value={{ state, setLandingPageConfig }}>
+    <AppContext.Provider value={{ state, setAppState }}>
       {children}
     </AppContext.Provider>
   );

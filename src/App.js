@@ -1,10 +1,15 @@
 import React from 'react';
+import { AppContextProvider } from "./components/context/index";
+import PageEditor from './components/PageEditor';
 
+/**
+ * Main app component
+ */
 const App = () => {
   return (
-    <div className="App">
-
-    </div>
+    <AppContextProvider>
+      <PageEditor />
+    </AppContextProvider>
   );
 }
 

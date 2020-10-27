@@ -2,12 +2,12 @@ import React, { useContext } from "react";
 import { AppContext } from "../context";
 
 /**
- * Editor component
+ * Display component
  */
-const Editor = () => {
+const PageDisplay = () => {
   return (
     <div></div>
   );
 }
 
-export default Editor;
+export default PageDisplay;
